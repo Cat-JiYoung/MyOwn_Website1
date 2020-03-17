@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>웹사이트 포폴</title>    
+        <style>
+            body {
+                background-color : #F08300;
+            }
+            h1 {
+                text-align : center;
+                color : #F34650;
+            }
+            h3 {
+                text-align : center;
+            }
+            img {
+                margin-left : 50px;
+                position : absolute;
+                object-fit: fill;
+                max-width :50%;
+                height : 50%;
+            }
+            a:visited{color : orangered;}
+            a:hover{color : white;}
+        </style>    
+    </head>
+
+    <body>
+        <input id="change" type="button" value="Color_change"
+            onclick="
+            var target = document.querySelector('body');
+            if(document.querySelector('#change').value === 'Color_change') {
+                target.style.backgroundColor = '#DC6C54';
+                target.style.color = 'white';
+                document.querySelector('#change').value = 'Color_change1'
+            }
+                else {
+                    target.style.backgroundColor = '#F08300';
+                    target.style.color = 'black';
+                    document.querySelector('#change').value = 'Color_change'
+                } ">
+
+        <h1><strong>Introduce Myself</strong></h1><br>
+        <img src="C:\Users\crayo\Desktop\웹페이지 포폴\Selfie.jpg">
+         <br><br>
+         <h3>이름 : 김지영</h3>
+         <h3>생년월일 : 1999.08.20</h3>
+         <h3>대학교/학과 : 가톨릭대학교/컴퓨터정보공학부</h3>
+         <h3>SNS주소 : <a href="http://www.facebook.com/jiyoung.kim.7798" 
+            targert="_blank" title="Facebook">페이스북 김지영</a><br>
+            <a href="https://www.instagram.com/zzi.__.0/?hl=ko" 
+            targert="_blank" title="Instagram">@zzi._.0</a><br>
+         </h3>
+         <h3 style="color : #333399"><strong>휴학생입니댜-!-!</strong></h3>
+         <br><br><br><br>
+         <hr>
+         
+
+        
+
+
+
+
+
+    </body>    
+</html>
